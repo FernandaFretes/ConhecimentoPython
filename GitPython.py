@@ -78,7 +78,7 @@
 
 salario = float(input("digite seu salario"))
 
-if (salario <= 1500):
+if (salario >= 1500 and salario <2000):
     print(f"seu salario é {salario + 500}")
     
 elif (salario <= 2000):
