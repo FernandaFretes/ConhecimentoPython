@@ -9,6 +9,7 @@
 #variaveis
 #espaços de memória que pode armazenar dados para a execução de um processo!
 
+#tipos de variaveis
 #Int, Float, String e Boolean
 #Int (1 (so um valor)): Armazena valores inteiros (10, 14, 999, 362...)
 #Float (1.(ponto)11(valor quebrado)) : Numeros decimais (1.2, 1.7, 3.98.... valores quebrados)
@@ -28,7 +29,7 @@
 #exibir -> Comando Print
 #print("Olá eu sou seu .py")
 
-# #para converar com o usuário eu uso o input
+# #para conversar com o usuário eu uso o input
 # altura = float(input("Digite sua altura"))
 # #a variavel altura recebe um valor quebrado de altura
 
@@ -38,6 +39,7 @@
 # nome = input("Digite seu nome ")
 # sobrenome = input("Digite seu sobrenome")
 # print(nome + sobrenome)
+#para juntar duas strings uso o termo CONCATENAR
 
 
 # print("Cadastro de uma pessoa")
@@ -76,19 +78,59 @@
 #se o salario for maior do que 2000 some 400
 #se o salario for maior do que 3000 some 300
 
-salario = float(input("digite seu salario"))
+# salario = float(input("digite seu salario"))
 
-if (salario >= 1500 and salario <2000):
-    print(f"seu salario é {salario + 500}")
+# if (salario >= 1500 and salario <2000):
+#     print(f"seu salario é {salario + 500}")
     
-elif (salario <= 2000):
-    print(f"seu salario é {salario + 400}")
+# elif (salario <= 2000):
+#     print(f"seu salario é {salario + 400}")
 
-elif (salario <= 3000):
-    print(f"seu salario é {salario + 300}")
+# elif (salario <= 3000):
+#     print(f"seu salario é {salario + 300}")
 
-else:
-    print("você é pobre :(")
+# else:
+#     print("você é pobre :")
+
+
+# Até agora, quando temos um codigo com varias operações sequenciais, é um código estruturado. Se tenho uma ou mais opções é uma estrutura condicional
+
+
+#temos ainda mais uma estrutura possível, a de repetição. Quando vc tenta cadastrar em um site e nao sabe as políticas de segurança, é possível que vc nao acerte de 1º então vc deve fazer de novo. tudo que é um esforço repetitivo usamos os laços de repetição. 
+#temos 2 tipos de laços de repetição, o For e o while. For tenho um numero de vezes que quero algo seja feito, e while quero que execute ate q eu ache o que procuro. 
+
+#SEI QUANTAS VEZES VOU EXECUTAR!
+
+for i in range(1,11):
+    print(i)
+#com a variavel i entre 1 a 11 (no onze eu paro)
+#imprima todo os numeros que estão entre 1 e 11
+
+for dardo in range(1,7):
+    print(f"Arremesse o {dardo} º dardo")
+
+#PRECISO QUE ME INFORFE QUANDO PARAR
+# exemplo de achar a lapiseira azul na sala
+while True:
+#enquanto for verdade
+    nome = input("Digite um nome (ou 'N' para sair): ")
+    #peça um nome ao usuário e armazene na variavel N, ou digitar N 
+    if nome.upper() == 'N':
+        # se o usuário digitar N
+        break
+    #pare, se nao volta para o while
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
